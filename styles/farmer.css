@@ -1,0 +1,38 @@
+
+.mainbod {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  margin: auto;
+  max-width: 960px;
+  align-items: center;
+  justify-content: center;
+  
+}
+.mainbod > .acbutton{
+    margin: 30px;
+}
+.acbutton {
+  width: 200px;
+  height: 200px;
+  background-color: #8ccba1;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.5s;
+}
+.acbutton:hover{
+    transform: scale(1.1);
+}
+.acbutton img{
+    padding:45px;
+    transform:scale(2);
+}
+.acbutton p{
+    position: relative;
+    color:white;
+    font-size: larger;
+    padding-bottom: 20px;
+}
