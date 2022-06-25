@@ -3,17 +3,19 @@ body {
   width: 100%;
   height: 100%;
 }
-.heading {
+.navbar {
   position: absolute;
   background-color: #3da64e;
   width: 99%;
   display: flex;
   flex-direction: row;
 }
-.headingl {
+.heading {
   text-align: left;
   color: white;
   margin: 20px 0px;
+  text-align: center;
+  padding-left: 600px;
 }
 
 form {
@@ -51,4 +53,7 @@ svg {
   width: 24px;
   height: 24px;
   padding: 10px;
+}
+.footgrad{
+    
 }
