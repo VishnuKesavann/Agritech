@@ -3,14 +3,31 @@
     justify-content: center;
 }
 .buttons{
+    padding-top: 300px;
     justify-content: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .buttons > button{
-    margin:30px;
+    margin:15px;
 }
 
-button{
-
-}
+.acbutton {
+    width: 250px;
+    height: auto;
+    background-color: #3da64e;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.5s;
+  }
+  .acbutton:hover {
+    transform: scale(1.1);
+  }
+  .acbutton p {
+    position: relative;
+    color: white;
+    font-size: larger;
+  }
