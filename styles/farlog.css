@@ -1,0 +1,22 @@
+.yes{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    margin-top: 10%;
+
+
+}
+.yes p{
+  align-content: flex-start  ;
+}
+
+.yes h1{
+    text-align: center;
+}
+.inf{
+    justify-content: flex-end;
+    align-items: flex-end;
+    display:flex;
+    flex-direction: row;
+}
