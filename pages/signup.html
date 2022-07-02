@@ -1,0 +1,59 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="../styles/signup.css">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <form action="index.html" method="post">
+  
+    <h1>Sign Up</h1>
+    
+    <fieldset>
+      <legend><span class="number">1</span>Your basic info</legend>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="user_name">
+      
+      <label for="mail">Email:</label>
+      <input type="email" id="mail" name="user_email">
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="user_password">
+      
+      <label>Gender:</label>
+      <input type="radio" id="male" value="male" name="user_gender"><label for="male" class="light">Male</label><br>
+      <input type="radio" id="female" value="female" name="user_gender"><label for="female" class="light">Female</label><br>
+      <input type="radio" id="other" value="other" name="user_gender"><label for="other" class="light">Other</label>
+    </fieldset>
+    
+    <fieldset>
+      <legend><span class="number">2</span>Your profile</legend>
+      <label for="bio">Biography:</label>
+      <textarea id="bio" name="user_bio"></textarea>
+    </fieldset>
+    <fieldset>
+    <label for="state">State:</label>
+    <select id="state" name="user_state">
+        <option value="kerala">Kerala</option>
+        <option value="tamil_nadu">Tamil Nadu</option>
+        <option value="karnataka">Karnataka</option>
+        <option value="telengana">Telengana</option>
+    </select>
+    
+    <label for="address">Address:</label>
+    <textarea id="addr" name="user_addr"></textarea>
+    
+    <label for="pincode">Pincode:</label>
+    <input type="number" id="pin" name="user_pin">
+    
+    <label for="panchayat">Nearaest Panchayat Office:</label>
+    <input type="text" id="panchayat" name="user_panchayat">
+    </fieldset>
+    <button type="submit"><a href="../pages/login.html">Sign Up</a></button>
+  </form>
+  
+</body>
+</html>

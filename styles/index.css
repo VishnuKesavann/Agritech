@@ -31,3 +31,7 @@
     color: white;
     font-size: larger;
   }
+  body .buttons .acbutton a{
+    color: white;
+    text-decoration: none;
+  }
