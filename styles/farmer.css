@@ -11,6 +11,9 @@
 .mainbod > .acbutton {
   margin: 30px;
 }
+.mainbod > a {
+  margin: 30px;
+}
 .acbutton {
   width: 200px;
   height: 200px;
