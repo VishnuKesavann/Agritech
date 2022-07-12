@@ -1,0 +1,20 @@
+.itembod{
+    display:flex;
+    width:960px;
+    padding:0;
+    margin: auto;
+    padding-top: 100px;
+    flex-direction: row;
+}
+.itembod img{
+    width:384px;
+    height:384px;
+    border-radius: 32px;
+}
+.listingdata{
+    padding-left: 20px;
+    font-size: 25px;
+}
+.listingdata h1{
+margin-top:-10px ;
+}
