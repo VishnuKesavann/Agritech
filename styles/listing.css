@@ -22,3 +22,68 @@ margin-top:20px ;
     font-size: 20px;
     margin-top: -30px;
 }
+.listingdata h2,h5{
+    display:inline;
+}
+.listingdata h5{
+    margin-left:10px;
+    text-decoration: black line-through;
+}
+.listingdata form{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    margin:20px 0px;
+}
+.listingdata form input{
+    background-color: #fff;
+    border: #000;
+    border-style: dotted;
+    border-radius: 20px;
+}
+.listingdata form input::-webkit-input-placeholder{
+    color:black;
+}
+.listingdata .upload{
+    margin: 10px 0px;
+}
+.blah{
+    width: 960px;
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+}
+.addr .address{
+    background-color: #fff;
+    border: #000;
+    border-radius: 20px;
+    border-style: groove;
+    width: 300px;
+}
+.addr .address::-webkit-input-placeholder{
+    color:black;
+}
+.addr h3{
+    background-color: #fff;
+}
+.addr{
+    background-color: #fff;
+    margin:none;
+    padding:none;
+}
+.addr>.address{
+    margin: 20px;
+}
+.registerbtn {
+    background-color: #4caf50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 20px;
+    text-align: center;
+  }
