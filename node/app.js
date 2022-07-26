@@ -46,7 +46,7 @@ app.post("/sign_up", function (req, res) {
     if (err) throw err;
     console.log("Record inserted Successfully");
   });
-  return res.redirect("redir.html");
+  return res.redirect("http://localhost:5501/pages/farmer.html");
 });
 
 app
@@ -54,7 +54,7 @@ app
     res.set({
       "Access-control-Allow-Origin": "*",
     });
-    return res.redirect("index.html");
+    return res.redirect("http://localhost:5501");
   })
   .listen(3000);
 
