@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/listing.css" />
+    <link rel="stylesheet" href="../styles/theme.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <title>Agritech</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <form id="form" role="search">
+        <input
+          type="search"
+          id="query"
+          name="q"
+          placeholder="Search..."
+          aria-label="Search through site content"
+        />
+        <button>
+          <svg viewBox="0 0 1024 1024">
+            <path
+              class="path1"
+              d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"
+            ></path>
+          </svg>
+        </button>
+      </form>
+      <p class="heading">SHOP</p>
+    </div>
+    <div class="blah">
+      <div class="itembod">
+        <img src="../assets/banan.jpg" />
+        <div class="listingdata">
+          <h1>Banana</h1>
+          <p>Deal ends soon!</p>
+          <h2>Rs. 49</h2>
+          <h5>Rs. 99</h5>
+          <form action="#">
+            <input type="number" id="quantity" min="0.5" max="20" step="0.5" placeholder="Quantity" onchange="calcprice()" /><p>kg</p>
+            <h4>Rs. <span id="price">0</span></h4>
+            <script>
+              function calcprice(){
+               var qty = document.getElementById("quantity").value;
+               console.log(qty);
+               document.getElementById("price").innerHTML =qty*49;
+              }
+             </script>
+          </form>
+          <section>
+            <p class="upload">Uploaded by:Rajappan S</p>
+            <p class="upload">Uploaded on:12/12/2019</p>
+          </section>
+        </div>
+      </div>
+      <p>
+        <h3>Product Details:</h3> A banana is an elongated, edible fruit – botanically a berry[1][2] – produced by several kinds of large herbaceous flowering plants in the genus Musa.[3] In some countries, bananas used for cooking may be called "plantains", distinguishing them from dessert bananas. The fruit is variable in size, color, and firmness, but is usually elongated and curved, with soft flesh rich in starch covered with a rind, which may be green, yellow, red, purple, or brown when ripe.
+      </p>
+      <form class="addr">
+      <h3>Delivery Address:</h3>
+      <input type="text" id="address" placeholder="Delivery Address" class="address">
+      </form>
+      <input type="checkbox" id="cod" name="cod" value="COD"><label for="cod">Cash on Delivery</label>
+      <a class="registerbtn" href="reshop.html"><button>Place Order</button></a>
+    </div>
+  </body>
+</html>
