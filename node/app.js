@@ -3,7 +3,7 @@ var bodyParser = require("body-parser");
 
 const mongoose = require("mongoose");
 mongoose.connect(
-  "mongodb+srv://handsforpaws:bfPIegDOPjLuqg02@handsforaws.ux3rnyk.mongodb.net/Agritech"
+  "mongodb+srv://handsforpaws:zpREptOo3FgmDNNs@handsforaws.ux3rnyk.mongodb.net/Agritech"
 );
 var db = mongoose.connection;
 db.on("error", console.log.bind(console, "connection error"));
@@ -46,7 +46,7 @@ app.post("/sign_up", function (req, res) {
     if (err) throw err;
     console.log("Record inserted Successfully");
   });
-  return res.redirect("http://localhost:5501/pages/farmer.html");
+  return res.redirect("http://localhost:5502/pages/farmer.html");
 });
 
 app
@@ -54,7 +54,7 @@ app
     res.set({
       "Access-control-Allow-Origin": "*",
     });
-    return res.redirect("http://localhost:5501");
+    return res.redirect("http://localhost:5502");
   })
   .listen(3000);
 
